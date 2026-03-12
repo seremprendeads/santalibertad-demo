@@ -801,3 +801,806 @@
   <script src="main.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SANTALIBERTAD — Streetwear para la Cultura</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVEGACIÓN
+  ============================== -->
+  <header class="nav" id="nav">
+    <div class="nav__container">
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+
+      <a href="#" class="nav__logo">
+        <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329779/logo-negro.jpg" alt="SantaLibertad Logo" class="nav__logo-img" />
+        <span class="nav__logo-bloc">SANTA</span><span class="nav__logo-culture">LIBERTAD</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu" role="navigation" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#featured" class="nav__link">Nuevos Lanzamientos</a></li>
+          <li class="nav__item"><a href="#categories" class="nav__link">Tienda</a></li>
+          <li class="nav__item"><a href="#best-sellers" class="nav__link">Más Vendidos</a></li>
+          <li class="nav__item"><a href="#brand" class="nav__link">Cultura</a></li>
+          <li class="nav__item"><a href="#social-feed" class="nav__link">Lookbook</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="nav__search" aria-label="Buscar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="nav__cart" id="cartBtn" aria-label="Carrito de compras">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+
+    </div>
+    <!-- Menú overlay móvil -->
+    <div class="nav__overlay" id="navOverlay">
+      <ul class="nav__overlay-list">
+        <li><a href="#featured" class="nav__overlay-link">Nuevos Lanzamientos</a></li>
+        <li><a href="#categories" class="nav__overlay-link">Tienda</a></li>
+        <li><a href="#best-sellers" class="nav__overlay-link">Más Vendidos</a></li>
+        <li><a href="#brand" class="nav__overlay-link">Cultura</a></li>
+        <li><a href="#social-feed" class="nav__overlay-link">Lookbook</a></li>
+      </ul>
+      <div class="nav__overlay-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="TikTok">TK</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==============================
+         SECCIÓN HERO
+    ============================== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__noise"></div>
+        <div class="hero__grid-lines"></div>
+        <!-- Hero background: foto principal de modelo -->
+        <div class="hero__photo"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Colección Primavera / Verano '26</p>
+        <h1 class="hero__headline">
+          <span class="hero__headline-line hero__headline-line--1">SANTA</span>
+          <span class="hero__headline-line hero__headline-line--2">LIBERTAD</span>
+          <span class="hero__headline-line hero__headline-line--3">CLOTHING</span>
+        </h1>
+        <p class="hero__tagline">Estilo que habla antes que vos. Streetwear auténtico para los que se mueven diferente.</p>
+        <div class="hero__actions">
+          <a href="#featured" class="btn btn--primary">Comprar Ahora</a>
+          <a href="#brand" class="btn btn--ghost">Nuestra Historia</a>
+        </div>
+      </div>
+
+      <!-- Logo grande hero -->
+      <div class="hero__logo-wrap">
+        <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329543/logo.png" alt="SantaLibertad" class="hero__logo-img" />
+      </div>
+      <div class="hero__badge">
+        <div class="hero__badge-inner">
+          <span>EDICIÓN</span>
+          <span>LIMITADA</span>
+          <span>'25</span>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator">
+        <span class="hero__scroll-text">BAJAR</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         TICKER / MARQUESINA
+    ============================== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span class="ticker__item">NUEVO LANZAMIENTO</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">ENVÍO GRATIS EN PEDIDOS +$75</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">HOODIES EDICIÓN LIMITADA</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">CULTURA AUTÉNTICA</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">NUEVO LANZAMIENTO</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">ENVÍO GRATIS EN PEDIDOS +$75</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">HOODIES EDICIÓN LIMITADA</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">CULTURA AUTÉNTICA</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">NUEVO LANZAMIENTO</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">ENVÍO GRATIS EN PEDIDOS +$75</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">HOODIES EDICIÓN LIMITADA</span>
+        <span class="ticker__dot">✦</span>
+        <span class="ticker__item">CULTURA AUTÉNTICA</span>
+        <span class="ticker__dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ==============================
+         CARRUSEL DE PRODUCTOS DESTACADOS
+    ============================== -->
+    <section class="featured" id="featured">
+      <div class="section-header">
+        <p class="section-header__label">Recién Llegado</p>
+        <h2 class="section-header__title">PIEZAS DESTACADAS</h2>
+      </div>
+
+      <div class="carousel" id="featuredCarousel">
+        <div class="carousel__viewport">
+          <div class="carousel__track" id="featuredTrack">
+
+            <!-- Producto 1 — Remera Raglan Verde -->
+            <article class="product-card">
+              <div class="product-card__media">
+                <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329534/1.jpg" alt="Remera Raglan Praying Hands Verde" class="product-card__img" loading="lazy" />
+                <span class="product-card__badge">Nuevo</span>
+                <div class="product-card__overlay">
+                  <button class="product-card__quick-view">Vista Rápida</button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Remera</p>
+                <h3 class="product-card__name">Raglan Praying Hands Verde</h3>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$48</span>
+                  <button class="product-card__cart btn--add-cart" data-name="Raglan Praying Hands Verde" data-price="48">+</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 2 — Remera Santa Libertad Negra -->
+            <article class="product-card">
+              <div class="product-card__media">
+                <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329534/2.jpg" alt="Remera Santa Libertad Ángel Negra" class="product-card__img" loading="lazy" />
+                <span class="product-card__badge product-card__badge--hot">🔥 Top</span>
+                <div class="product-card__overlay">
+                  <button class="product-card__quick-view">Vista Rápida</button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Remera</p>
+                <h3 class="product-card__name">Santa Libertad Ángel — Negra</h3>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$52</span>
+                  <button class="product-card__cart btn--add-cart" data-name="Santa Libertad Ángel — Negra" data-price="52">+</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 3 — Remera Guerrero Negra -->
+            <article class="product-card">
+              <div class="product-card__media">
+                <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/3.jpg" alt="Remera Guerrero SantaLibertad Negra" class="product-card__img" loading="lazy" />
+                <div class="product-card__overlay">
+                  <button class="product-card__quick-view">Vista Rápida</button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Remera</p>
+                <h3 class="product-card__name">Guerrero SantaLibertad — Negra</h3>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$52</span>
+                  <button class="product-card__cart btn--add-cart" data-name="Guerrero SantaLibertad — Negra" data-price="52">+</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 4 — Remera Skull Ice Cream Amarilla -->
+            <article class="product-card">
+              <div class="product-card__media">
+                <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/4.jpg" alt="Remera Skull Ice Cream Amarilla" class="product-card__img" loading="lazy" />
+                <span class="product-card__badge product-card__badge--sale">−20%</span>
+                <div class="product-card__overlay">
+                  <button class="product-card__quick-view">Vista Rápida</button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Remera</p>
+                <h3 class="product-card__name">Skull Ice Cream — Amarilla</h3>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$44 <del>$55</del></span>
+                  <button class="product-card__cart btn--add-cart" data-name="Skull Ice Cream — Amarilla" data-price="44">+</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 5 — Remera SL Fuego Roja -->
+            <article class="product-card">
+              <div class="product-card__media">
+                <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/5.jpg" alt="Remera Santa Libertad Fuego Roja" class="product-card__img" loading="lazy" />
+                <div class="product-card__overlay">
+                  <button class="product-card__quick-view">Vista Rápida</button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Remera</p>
+                <h3 class="product-card__name">SL Fuego — Roja</h3>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$48</span>
+                  <button class="product-card__cart btn--add-cart" data-name="SL Fuego — Roja" data-price="48">+</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 6 — Raglan Roja/Azul -->
+            <article class="product-card">
+              <div class="product-card__media">
+                <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329534/1.jpg" alt="Raglan SantaLibertad Roja y Azul" class="product-card__img" loading="lazy" />
+                <span class="product-card__badge">Nuevo</span>
+                <div class="product-card__overlay">
+                  <button class="product-card__quick-view">Vista Rápida</button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Remera</p>
+                <h3 class="product-card__name">Raglan SantaLibertad — Roja/Azul</h3>
+                <div class="product-card__footer">
+                  <span class="product-card__price">$50</span>
+                  <button class="product-card__cart btn--add-cart" data-name="Raglan SantaLibertad — Roja/Azul" data-price="50">+</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="carousel__controls">
+          <button class="carousel__btn carousel__btn--prev" id="featuredPrev" aria-label="Anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="carousel__dots" id="featuredDots"></div>
+          <button class="carousel__btn carousel__btn--next" id="featuredNext" aria-label="Siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SECCIÓN CATEGORÍAS
+    ============================== -->
+    <section class="categories" id="categories">
+      <div class="section-header">
+        <p class="section-header__label">Explorá el Catálogo</p>
+        <h2 class="section-header__title">COMPRAR POR CATEGORÍA</h2>
+      </div>
+
+      <div class="categories__grid">
+
+        <a href="#" class="category-card category-card--large">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/4.jpg" alt="Remeras SantaLibertad" class="category-card__img-bg" />
+          <div class="category-card__bg category-card__bg--overlay"></div>
+          <div class="category-card__content">
+            <span class="category-card__count">24 Estilos</span>
+            <h3 class="category-card__title">Remeras</h3>
+            <span class="category-card__cta">Comprar Ahora →</span>
+          </div>
+        </a>
+
+        <a href="#" class="category-card category-card--large">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329537/7.jpg" alt="Remeras Oversized SantaLibertad" class="category-card__img-bg" />
+          <div class="category-card__bg category-card__bg--overlay"></div>
+          <div class="category-card__content">
+            <span class="category-card__count">18 Estilos</span>
+            <h3 class="category-card__title">Oversized</h3>
+            <span class="category-card__cta">Comprar Ahora →</span>
+          </div>
+        </a>
+
+        <a href="#" class="category-card category-card--small">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/3.jpg" alt="Raglan SantaLibertad" class="category-card__img-bg" />
+          <div class="category-card__bg category-card__bg--overlay"></div>
+          <div class="category-card__content">
+            <span class="category-card__count">12 Estilos</span>
+            <h3 class="category-card__title">Raglan</h3>
+            <span class="category-card__cta">Comprar Ahora →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         SECCIÓN IDENTIDAD DE MARCA
+    ============================== -->
+    <section class="brand" id="brand">
+      <div class="brand__container">
+        <div class="brand__text-block">
+          <p class="section-header__label">La Cultura</p>
+          <h2 class="brand__headline">CONSTRUIDO PARA LOS QUE HABLAN EN BARRAS</h2>
+          <div class="brand__body">
+            <p>SANTALIBERTAD nació en el underground — en los círculos de cipher, estudios llenos de humo y canchas de cemento donde el hip-hop no era solo música, era supervivencia. Cada costura lleva esa energía.</p>
+            <p>No seguimos tendencias. Las marcamos. Nuestras piezas son manifiestos que se usan — diseñadas para quienes entienden que lo que vestís es lo que decís antes de abrir la boca.</p>
+          </div>
+          <a href="#" class="btn btn--outline">Nuestro Manifiesto</a>
+        </div>
+        <div class="brand__visual">
+          <div class="brand__big-text" aria-hidden="true">CULTURA</div>
+          <div class="brand__stats">
+            <div class="brand__stat">
+              <span class="brand__stat-number">2019</span>
+              <span class="brand__stat-label">Fundada</span>
+            </div>
+            <div class="brand__stat">
+              <span class="brand__stat-number">50K+</span>
+              <span class="brand__stat-label">Comunidad</span>
+            </div>
+            <div class="brand__stat">
+              <span class="brand__stat-number">100%</span>
+              <span class="brand__stat-label">Auténtica</span>
+            </div>
+          </div>
+          <div class="brand__img-grid">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329534/1.jpg" alt="Look 1" class="brand__img" loading="lazy" />
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329534/2.jpg" alt="Look 2" class="brand__img" loading="lazy" />
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329534/2.jpg" alt="Look 3" class="brand__img" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         GRILLA DE MÁS VENDIDOS
+    ============================== -->
+    <section class="best-sellers" id="best-sellers">
+      <div class="section-header">
+        <p class="section-header__label">Aprobado por la Comunidad</p>
+        <h2 class="section-header__title">MÁS VENDIDOS</h2>
+      </div>
+
+      <div class="best-sellers__grid">
+
+        <article class="product-card product-card--grid">
+          <div class="product-card__media">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329534/2.jpg" alt="Santa Libertad Ángel Negra" class="product-card__img" loading="lazy" />
+            <span class="product-card__badge product-card__badge--hot">🔥 #1</span>
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">Vista Rápida</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__category">Remera</p>
+            <h3 class="product-card__name">Santa Libertad Ángel — Negra</h3>
+            <div class="product-card__footer">
+              <span class="product-card__price">$52</span>
+              <button class="product-card__cart btn--add-cart" data-name="Santa Libertad Ángel — Negra" data-price="52">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card product-card--grid">
+          <div class="product-card__media">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329538/10.2.jpg" alt="SL Fuego Azul" class="product-card__img" loading="lazy" />
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">Vista Rápida</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__category">Remera</p>
+            <h3 class="product-card__name">SL Fuego — Azul</h3>
+            <div class="product-card__footer">
+              <span class="product-card__price">$48</span>
+              <button class="product-card__cart btn--add-cart" data-name="SL Fuego — Azul" data-price="48">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card product-card--grid">
+          <div class="product-card__media">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329540/11.jpg" alt="Skull Ice Cream Blanca" class="product-card__img" loading="lazy" />
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">Vista Rápida</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__category">Remera</p>
+            <h3 class="product-card__name">Skull Ice Cream — Blanca</h3>
+            <div class="product-card__footer">
+              <span class="product-card__price">$48</span>
+              <button class="product-card__cart btn--add-cart" data-name="Skull Ice Cream — Blanca" data-price="48">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card product-card--grid">
+          <div class="product-card__media">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/3.jpg" alt="Guerrero SantaLibertad Negra" class="product-card__img" loading="lazy" />
+            <span class="product-card__badge product-card__badge--sale">−15%</span>
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">Vista Rápida</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__category">Remera</p>
+            <h3 class="product-card__name">Guerrero SantaLibertad — Negra</h3>
+            <div class="product-card__footer">
+              <span class="product-card__price">$44 <del>$52</del></span>
+              <button class="product-card__cart btn--add-cart" data-name="Guerrero SantaLibertad — Negra" data-price="44">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card product-card--grid">
+          <div class="product-card__media">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/4.jpg" alt="Skull Ice Cream Amarilla" class="product-card__img" loading="lazy" />
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">Vista Rápida</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__category">Remera</p>
+            <h3 class="product-card__name">Skull Ice Cream — Amarilla</h3>
+            <div class="product-card__footer">
+              <span class="product-card__price">$52</span>
+              <button class="product-card__cart btn--add-cart" data-name="Skull Ice Cream — Amarilla" data-price="52">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card product-card--grid">
+          <div class="product-card__media">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329536/6.jpg" alt="Raglan SantaLibertad Roja/Azul" class="product-card__img" loading="lazy" />
+            <span class="product-card__badge">Nuevo</span>
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">Vista Rápida</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__category">Remera</p>
+            <h3 class="product-card__name">Raglan SantaLibertad — Roja/Azul</h3>
+            <div class="product-card__footer">
+              <span class="product-card__price">$50</span>
+              <button class="product-card__cart btn--add-cart" data-name="Raglan SantaLibertad — Roja/Azul" data-price="50">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card product-card--grid">
+          <div class="product-card__media">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329536/6.jpg" alt="Remera Monster Girl Negra" class="product-card__img" loading="lazy" />
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">Vista Rápida</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__category">Remera</p>
+            <h3 class="product-card__name">Monster Girl Oversized — Negra</h3>
+            <div class="product-card__footer">
+              <span class="product-card__price">$54</span>
+              <button class="product-card__cart btn--add-cart" data-name="Monster Girl Oversized — Negra" data-price="54">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card product-card--grid">
+          <div class="product-card__media">
+            <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/5.jpg" alt="SL Fuego Roja" class="product-card__img" loading="lazy" />
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">Vista Rápida</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__category">Remera</p>
+            <h3 class="product-card__name">SL Fuego — Roja</h3>
+            <div class="product-card__footer">
+              <span class="product-card__price">$48</span>
+              <button class="product-card__cart btn--add-cart" data-name="SL Fuego — Roja" data-price="48">+</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="best-sellers__cta">
+        <a href="#" class="btn btn--primary">Ver Todos los Productos</a>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CARRUSEL DE TESTIMONIOS
+    ============================== -->
+    <section class="testimonials">
+      <div class="section-header">
+        <p class="section-header__label">Lo que se dice en el barrio</p>
+        <h2 class="section-header__title">LA GENTE HABLA</h2>
+      </div>
+
+      <div class="carousel carousel--testimonials" id="testimonialsCarousel">
+        <div class="carousel__viewport">
+          <div class="carousel__track" id="testimonialsTrack">
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote class="testimonial-card__quote">"Esta remera rompe todo. La usé en un show y como 5 personas me pararon preguntando dónde la había comprado. La calidad es real, no esas cosas de fast fashion."</blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar testimonial-card__avatar--1"></div>
+                <div>
+                  <p class="testimonial-card__name">Marcos T.</p>
+                  <p class="testimonial-card__location">Buenos Aires, AR</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote class="testimonial-card__quote">"Llevo años en el mundo del streetwear. SANTALIBERTAD es lo real — los gráficos pegan diferente y la tela es premium. Toda mi gente ya está con esto."</blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar testimonial-card__avatar--2"></div>
+                <div>
+                  <p class="testimonial-card__name">Jazmín R.</p>
+                  <p class="testimonial-card__location">Córdoba, AR</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote class="testimonial-card__quote">"El envío fue rápido, el packaging estaba perfecto y la remera es exactamente como se ve en el sitio. Ya pedí dos más. Esta marca entiende la cultura de verdad."</blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar testimonial-card__avatar--3"></div>
+                <div>
+                  <p class="testimonial-card__name">Diego K.</p>
+                  <p class="testimonial-card__location">Rosario, AR</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote class="testimonial-card__quote">"El talle oversized es perfecto. Ni muy grande ni muy ajustado. Se nota que esto lo diseñaron personas que viven este estilo, no una junta directiva corporativa."</blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar testimonial-card__avatar--4"></div>
+                <div>
+                  <p class="testimonial-card__name">Analía M.</p>
+                  <p class="testimonial-card__location">Mendoza, AR</p>
+                </div>
+              </div>
+            </div>
+
+           <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote class="testimonial-card__quote">"Esta remera rompe todo. La usé en un show y como 5 personas me pararon preguntando dónde la había comprado. La calidad es real, no esas cosas de fast fashion."</blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar testimonial-card__avatar--1"></div>
+                <div>
+                  <p class="testimonial-card__name">Marcos T.</p>
+                  <p class="testimonial-card__location">Buenos Aires, AR</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote class="testimonial-card__quote">"Llevo años en el mundo del streetwear. SANTALIBERTAD es lo real — los gráficos pegan diferente y la tela es premium. Toda mi gente ya está con esto."</blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar testimonial-card__avatar--2"></div>
+                <div>
+                  <p class="testimonial-card__name">Jazmín R.</p>
+                  <p class="testimonial-card__location">Córdoba, AR</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote class="testimonial-card__quote">"El envío fue rápido, el packaging estaba perfecto y la remera es exactamente como se ve en el sitio. Ya pedí dos más. Esta marca entiende la cultura de verdad."</blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar testimonial-card__avatar--3"></div>
+                <div>
+                  <p class="testimonial-card__name">Diego K.</p>
+                  <p class="testimonial-card__location">Rosario, AR</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote class="testimonial-card__quote">"El talle oversized es perfecto. Ni muy grande ni muy ajustado. Se nota que esto lo diseñaron personas que viven este estilo, no una junta directiva corporativa."</blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar testimonial-card__avatar--4"></div>
+                <div>
+                  <p class="testimonial-card__name">Analía M.</p>
+                  <p class="testimonial-card__location">Mendoza, AR</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__controls">
+          <button class="carousel__btn carousel__btn--prev" id="testimonialsPrev" aria-label="Testimonio anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="carousel__dots" id="testimonialsDots"></div>
+          <button class="carousel__btn carousel__btn--next" id="testimonialsNext" aria-label="Testimonio siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SECCIÓN NEWSLETTER
+    ============================== -->
+    <section class="newsletter">
+      <div class="newsletter__container">
+        <div class="newsletter__content">
+          <p class="newsletter__eyebrow">Unite al Movimiento</p>
+          <h2 class="newsletter__title">ACCESO ANTICIPADO A CADA LANZAMIENTO</h2>
+          <p class="newsletter__sub">Sin spam. Solo los drops más frescos, ofertas exclusivas y novedades de la cultura directo a tu correo.</p>
+          <div class="newsletter__form-wrapper">
+            <div class="newsletter__form" role="form" aria-label="Suscripción al newsletter">
+              <input type="email" class="newsletter__input" placeholder="Tu dirección de correo" aria-label="Correo electrónico" />
+              <button class="newsletter__submit btn btn--primary" type="button" id="newsletterSubmit">Suscribirme</button>
+            </div>
+            <p class="newsletter__disclaimer">Al suscribirte aceptás nuestra Política de Privacidad. Podés darte de baja cuando quieras.</p>
+          </div>
+        </div>
+        <div class="newsletter__visual" aria-hidden="true">
+          <span class="newsletter__bg-text">DRIP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         FEED INSTAGRAM / REDES SOCIALES
+    ============================== -->
+    <section class="social-feed" id="social-feed">
+      <div class="section-header">
+        <p class="section-header__label">@santalibertadclothing</p>
+        <h2 class="section-header__title">SEGUINOS EN IG</h2>
+      </div>
+
+      <div class="social-feed__grid">
+        <a href="#" class="social-feed__item" aria-label="Publicación de Instagram 1">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329534/1.jpg" alt="Look Raglan Verde" loading="lazy" />
+          <div class="social-feed__overlay">
+            <svg class="social-feed__ig-icon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+        <a href="#" class="social-feed__item" aria-label="Publicación de Instagram 2">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/3.jpg" alt="Look Guerrero" loading="lazy" />
+          <div class="social-feed__overlay">
+            <svg class="social-feed__ig-icon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+        <a href="#" class="social-feed__item" aria-label="Publicación de Instagram 3">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329535/4.jpg" alt="Look Amarillo" loading="lazy" />
+          <div class="social-feed__overlay">
+            <svg class="social-feed__ig-icon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+        <a href="#" class="social-feed__item" aria-label="Publicación de Instagram 4">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329539/10.jpg" alt="Look Azul Fuego" loading="lazy" />
+          <div class="social-feed__overlay">
+            <svg class="social-feed__ig-icon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+        <a href="#" class="social-feed__item" aria-label="Publicación de Instagram 5">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329540/11.jpg" alt="Look Skull Blanca" loading="lazy" />
+          <div class="social-feed__overlay">
+            <svg class="social-feed__ig-icon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+        <a href="#" class="social-feed__item" aria-label="Publicación de Instagram 6">
+          <img src="https://res.cloudinary.com/djhgvjclq/image/upload/v1773329540/11.jpg" alt="Look Raglan" loading="lazy" />
+          <div class="social-feed__overlay">
+            <svg class="social-feed__ig-icon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+      </div>
+
+      <div class="social-feed__cta">
+        <a href="#" class="btn btn--ghost">Seguir @santalibertadclothing</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================
+       PIE DE PÁGINA
+  ============================== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo footer__logo">
+          <span class="nav__logo-bloc">SANTA</span><span class="nav__logo-culture">LIBERTAD</span>
+        </a>
+        <p class="footer__tagline">Estilo para la cultura. Construido desde el barrio.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación del pie de página">
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-title">Tienda</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link">Novedades</a></li>
+            <li><a href="#" class="footer__nav-link">Remeras</a></li>
+            <li><a href="#" class="footer__nav-link">Raglan</a></li>
+            <li><a href="#" class="footer__nav-link">Accesorios</a></li>
+            <li><a href="#" class="footer__nav-link">Ofertas</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-title">Marca</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link">Nuestra Historia</a></li>
+            <li><a href="#" class="footer__nav-link">Lookbook</a></li>
+            <li><a href="#" class="footer__nav-link">Colaboraciones</a></li>
+            <li><a href="#" class="footer__nav-link">Artistas</a></li>
+            <li><a href="#" class="footer__nav-link">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-title">Soporte</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link">Guía de Talles</a></li>
+            <li><a href="#" class="footer__nav-link">Envíos</a></li>
+            <li><a href="#" class="footer__nav-link">Devoluciones</a></li>
+            <li><a href="#" class="footer__nav-link">Preguntas Frecuentes</a></li>
+            <li><a href="#" class="footer__nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2026 SANTALIBERTAD CLOTHING. Todos los derechos reservados. Hecho para las calles.</p>
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Política de Privacidad</a>
+        <a href="#" class="footer__legal-link">Términos y Condiciones</a>
+        <a href="#" class="footer__legal-link">Política de Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notificación del carrito -->
+  <div class="cart-toast" id="cartToast" role="alert" aria-live="polite">
+    <span class="cart-toast__icon">✓</span>
+    <span class="cart-toast__msg" id="cartToastMsg">Agregado al carrito</span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
