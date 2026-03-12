@@ -610,7 +610,7 @@ button {
 
 /* ── CAMBIO 4: CLOTHING — base más chica (10rem → 7rem) ── */
 .hero__headline-line--3 {
-  font-size:font-size: clamp(6rem, 12vw, 22rem);
+  font-size: clamp(6rem, 12vw, 22rem);
   color: var(--color-accent);
   animation-delay: 0.6s;
   line-height: 0.82;
