@@ -523,9 +523,10 @@ button {
   animation: fadeIn 0.8s 1s ease forwards;
 }
 
+/* ── CAMBIO 1: logo mobile más grande (140px → 220px) ── */
 .hero__logo-img {
-  width: 140px;
-  height: 140px;
+  width: 220px;
+  height: 220px;
   object-fit: contain;
   filter: drop-shadow(0 0 40px rgba(232,255,0,0.18));
   transition: filter var(--transition-med);
@@ -592,21 +593,24 @@ button {
   animation: fadeUp 0.7s ease forwards;
 }
 
+/* ── CAMBIO 2: SANTA — base más chica (8rem → 5.5rem) ── */
 .hero__headline-line--1 {
-  font-size: clamp(8rem, 18vw, 18rem);
+  font-size: clamp(5.5rem, 18vw, 18rem);
   color: var(--color-text);
   animation-delay: 0.4s;
 }
 
+/* ── CAMBIO 3: LIBERTAD — base más chica (4rem → 2.8rem) ── */
 .hero__headline-line--2 {
-  font-size: clamp(4rem, 9vw, 8.5rem);
+  font-size: clamp(2.8rem, 9vw, 8.5rem);
   color: var(--color-text-muted);
   animation-delay: 0.5s;
   padding-left: 4px;
 }
 
+/* ── CAMBIO 4: CLOTHING — base más chica (10rem → 7rem) ── */
 .hero__headline-line--3 {
-  font-size: clamp(10rem, 22vw, 22rem);
+  font-size: clamp(7rem, 22vw, 22rem);
   color: var(--color-accent);
   animation-delay: 0.6s;
   line-height: 0.82;
@@ -763,8 +767,6 @@ button {
 .product-card:hover .product-card__img {
   transform: scale(1.05);
 }
-
-/* Real product photos — object-fit handled by the <img> tag above */
 
 /* Overlay hover */
 .product-card__overlay {
@@ -1055,7 +1057,6 @@ button {
 .category-card__bg--tees,
 .category-card__bg--hoodies,
 .category-card__bg--accessories {
-  /* Replaced by real images — kept for fallback */
   background: var(--color-surface-2);
 }
 
@@ -1229,8 +1230,6 @@ button {
   border-radius: var(--radius-sm);
   overflow: hidden;
 }
-
-/* Brand img grid — real images via <img> tags */
 
 @media (min-width: 900px) {
   .brand__container {
@@ -1517,7 +1516,6 @@ button {
   display: block;
 }
 
-/* Social feed items — real images positioned inside */
 .social-feed__item--1,
 .social-feed__item--2,
 .social-feed__item--3,
@@ -1788,6 +1786,7 @@ button {
 .social-feed__item:hover img {
   transform: scale(1.06);
 }
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
